@@ -1,0 +1,41 @@
+:root {
+	--white: #fff;
+	--dark: #111;
+	--light: #f8ebff;
+	--light-placeholder: #ccc;
+	--blue: #4a3aff;
+	--lightblue: #008cff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	padding-bottom: 7px;
+	margin: 0;
+	background-image: url("../client/assets/map-vector.png");
+}
+
+@media (min-width: 375px) {
+	body {
+		background-position: top;
+		background-size: 200%;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		background-position: 50% 10%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
